@@ -1,135 +1,61 @@
-/**
-* Template Name: Mentor
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+let caret = document.getElementsByClassName('caret');
+let dw = document.getElementsByClassName('down');
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
+
+for(let i = 0; i < caret.length; i++){
+  caret[i].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="20px" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="#00A6EB" class="w-6 h-6 mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+</svg>`
+}
+
+for(let i = 0; i < dw.length; i++){
+  dw[i].innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff90" class="w-6 h-6 pt-1">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+</svg>
+`
+}
+
+
+let cops = document.getElementById('copy');
+let show = document.getElementById('notify');
+let wcopy = document.getElementById('w-copy');
+
+function notification(note){
+  show.innerHTML = note;
+  show.classList.remove('d-none');
+
+  setTimeout(() => {
+    show.classList.add('d-none');
+  }, 2000)
+}
+
+
+function copyNumber(){
+  navigator.clipboard.writeText('+447960886147');
+  alert('Copied number to clipboard');
+
+}
+
+cops.onclick = () => {
+  copyNumber();
+  notification(`<p class="text-center ln-2">copied whatsapp number <span class="b6">+44 7960 8861 47</span> to clipboard.</p>`)
+};
+
+wcopy.onclick = () => {
+  copyNumber();
+  notification(`<p class="text-center ln-2">copied whatsapp number <span class="b6">+44 7960 8861 47</span> to clipboard.</p>`)
+};
+
+let navy = document.getElementsByClassName('navy');
+    bars = document.getElementById('bars');
+
+bars.onclick = ()=>{
+  for(let i = 0; i < navy.length; i++){
+    if(navy[i].classList.contains('d-none-md'))
+      navy[i].classList.remove('d-none-md');
+    else
+      navy[i].classList.add('d-none-md');
   }
+}
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
-    }
-  }
 
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
-
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
-
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
-
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
-
-  /**
-   * Preloader
-   */
-  let preloader = select('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      preloader.remove()
-    });
-  }
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      }
-    }
-  });
-
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener('load', () => {
-    AOS.init({
-      duration: 1000,
-      easing: 'ease-in-out',
-      once: true,
-      mirror: false
-    })
-  });
-
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
-
-})()
