@@ -48549,7 +48549,7 @@ a-md{
 /* DISPLAYS */
 
 .d-none-md{
-	display: none;
+	display: none !important;
 }
 
 .d-flex-md{

@@ -1,21 +1,3 @@
-let caret = document.getElementsByClassName('caret');
-let dw = document.getElementsByClassName('down');
-
-
-for(let i = 0; i < caret.length; i++){
-  caret[i].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="20px" fill="none" viewBox="0 0 24 24" stroke-width="1.3" stroke="#00A6EB" class="w-6 h-6 mr-2">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-</svg>`
-}
-
-for(let i = 0; i < dw.length; i++){
-  dw[i].innerHTML = ` <svg xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff90" class="w-6 h-6 pt-1">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-</svg>
-`
-}
-
-
 let cops = document.getElementById('copy');
 let show = document.getElementById('notify');
 let wcopy = document.getElementById('w-copy');
@@ -59,3 +41,26 @@ bars.onclick = ()=>{
 }
 
 
+let search =  document.getElementById('search');
+    searchAway =  document.getElementById('search-away');
+    searchBtn =  document.getElementById('search-icon');
+
+function blogSearch(){
+
+}
+
+function awaySh(){
+  search.classList.add('d-none');
+}
+
+searchAway.onclick = () => {
+  awaySh();
+}
+
+searchBtn.onclick = () => {
+  search.classList.remove('d-none');
+}
+
+function notYet(){
+  alert('No posts yet');
+}

@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
                 
 *{
   padding: 0;
   margin: 0;
-  font-family: 'Proxima Nova', sans-serif;
-  color: #333333;
-  font-size: 17px;
+  color: #475366;
+  font-size: 15.5px;
   z-index: 1;
+  font-family: 'Work Sans', sans-serif;
 }
 
 html{
@@ -20,6 +19,8 @@ html{
   left: 0;
   color: white;
   z-index: 5;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .social *{
@@ -33,21 +34,21 @@ html{
 }
 
 nav{
-  background-color: #000;
-  font-weight: 600;
   z-index: 5;
 }
 
 nav *{
   color: white;
+  font-size: 14px;
 }
 
 .title{
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .im, .im * {
-  font-family: 'Crimson Text', serif !important;
+  /*font-family: 'Crimson Text', serif !important;*/
+  font-family: 'Uber Move Text', sans-serif !important;
 }
 
 .c{
@@ -65,17 +66,13 @@ nav *{
 .ln-3{line-height: 2;}
 
 .blue {
-  background-color: #D2E6E8;
+  background-color: #EEF1F6;
 }
 
 .blue *{
-  color: #000000;
+  color: #232323;
   line-height: 1.5;
-  border-color: #00000040;
-}
-
-.about{
-  font-size: 18px;
+  border-color: #EEF1F6;
 }
 
 .about:hover{
@@ -125,17 +122,25 @@ nav *{
   color: black;
 }
 
-.iconz { width: 25px; text-align: center; }
+.iconz {
+  display: flex;
+  justify-content: center;
+  width: 25px; text-align: center;
+}
 
-.smoky { background-color: #F3F3F3; }
+.iconz .fab{
+  color: red;
+}
+
+.smoky { background-color: #F0F4FC; }
 
 footer{
-  background-color: #FBF5ED;
+  background-color: #F0F0F0;
 
 }
 
 footer *{
-  color: #333333;
+  color: #575757;
 }
 
 .line{
@@ -172,4 +177,59 @@ footer *{
 
 .bk{
   word-break: break-all;
+}
+
+.blog-search{
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.blog-search .col-5{
+  z-index: 13;
+}
+
+.mask{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index: 12;
+}
+
+.search{
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #00000040;
+  font-size: 18px;
+  color: #575757;
+}
+
+.suggested{
+  background-color: white;
+}
+
+.suggested ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.suggested ul li{
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.suggested ul li:hover{
+  background-color: #F7F3FB;
 }
