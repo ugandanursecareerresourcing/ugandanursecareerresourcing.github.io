@@ -144,3 +144,37 @@ searchBtn.onclick = () => {
   search.classList.remove('d-none');
 }
 
+
+
+let blogs = document.getElementById('blogs');
+
+blogs.innerHTML = `
+<div class="flex mt-10 justify-center smoky pb-10 pt-5" id="contact">
+    <div class="col-7 col-9-md col-10-sm ">
+      <div class="px-2-sm">
+        <p class="text-xl-4 bold purple mt-7">Our blogs and news</p>
+        
+        <div class="flex flex-wrap justify-between mt-3">
+          <a href="what-is-IELTS.html" class="col-4 col-5-lg col-10-sm"><div class="mt-4 flex">
+            <div class="blog-img" style="background-image: url('img/ielts.png');"></div>
+            <div class="ml-2">
+              <p class="fw5">What is IELTS?</p>
+              <p class="mt-1 ln-2">IELTS in full is International English Language Testing System that is designed</p>
+            </div>
+          </div></a>
+
+          <a href="blogs/what-is-IELTS.html" class="col-4 d-none col-5-lg col-10-sm"><div class="mt-4 ml-7 ml-4-lg ml-2-md ml-0-sm flex">
+            <div class="blog-img" style="background-image: url('blogs/img/ielts.png');"></div>
+            <div class="ml-2">
+              <p class="fw5">What is IELTS?</p>
+              <p class="mt-1 ln-2">IELTS in full is International English Language Testing System that is designed</p>
+            </div>
+          </div></a>
+
+        </div>
+        
+      </div>
+
+    </div>
+  </div>
+`
