@@ -235,3 +235,12 @@ footer *{
 .suggested ul li:hover{
   background-color: #F7F3FB;
 }
+
+.blog-img{
+  height: 70px;
+  width: 130px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 7px;
+}
