@@ -10039,7 +10039,7 @@ a{
 }
 
 .opacity-50{
-	opacity: 50%;
+	opacity: 50% !important;
 }
 
 .opacity-60{
@@ -57879,8 +57879,8 @@ a-sm{
 }
 
 .py-2-sm{
-	padding-top: 10px;
-	padding-bottom:10px;
+	padding-top: 10px !important;
+	padding-bottom:10px !important;
 }
 
 .py-3-sm{

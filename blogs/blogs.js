@@ -2,12 +2,12 @@ let nav = document.getElementById('nav');
 let social = document.getElementById('social');
 
 nav.innerHTML = `
-  <nav class="navbar sticky-top navbar-expand-lg py-4 py-2-sm">
-  <div class="container">
+  <nav class="navbar sticky-top navbar-expand-lg py-4 py-2-sm flex justify-center border-bottom shadow-none">
+  <div class="col-6 col-8-lg col-10-md flex flex-wrap justify-between px-2-sm">
     <a class="navbar-brand" href="../index.html">
       <div class="flex align-items-center">
         <!-- img src="/images/bootstrap-logo.svg" width="36" alt="Logo" /-->
-        <span class=" text-xl-2 b6">UgNCR</span>
+        <span class="b8 title">UgNCR</span>
       </div>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,6 +29,7 @@ nav.innerHTML = `
       </ul>
       <div class="d-flex align-items-center flex-column flex-lg-row">
         <input onclick="showSearch()" class="form-control" aria-label="readonly input example" readonly type="text" placeholder="Search blog" />
+        <button onclick="showSearch()" class="btn decoration flex align-items-center justify-between py-2 ml-2 px-3">search <i class="fas ml-2 fa-search"></i></button>
       </div>
     </div>
   </div>
@@ -56,11 +57,11 @@ function copied(txt){
 
 
 social.innerHTML = `
-    <p onclick='copied("+447960886147")' class="py-3 bg-green-200"><i class="fab text-xl-3 fa-whatsapp"></i></p>
-    <p onclick='copied("ugandanursecareerresourcing@gmail.com")' class="py-3 bg-red-200"><i class="fab text-xl-3 fa-google"></i></p></a>
-    <a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-3 bg-blue-300"><i class="fab text-xl-3 fa-facebook"></i></p></a>
-    <a href="https://twitter.com/CareerNurses"><p class="py-3 bg-blue-200"><i class="fab text-xl-3 fa-twitter"></i></p></a>
-    <p onclick="showSearch()" id="w-copy" class="py-3 bg-orange-400"><i class="fas text-xl-3 fa-search"></i></p>
+    <a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-3 bg-blue-300"><i class="fab fa-facebook-f"></i></p></a>
+    <p onclick='copied("ugandanursecareerresourcing@gmail.com")' class="py-3 gmail"><i class="fas fa-envelope"></i></p></a>
+    <a href="https://twitter.com/CareerNurses"><p class="py-3 twitter"><i class="fab fa-twitter"></i></p></a>
+    <p onclick='copied("+447960886147")' class="py-3 whatsapp"><i class="fab fa-whatsapp"></i></p>
+    <p onclick="showSearch()" id="w-copy" class="py-3 bg-orange-400"><i class="fas fa-search"></i></p>
 `
 
 
@@ -98,8 +99,8 @@ foot.innerHTML = `
 
   <div class="copyright py-2 flex justify-around align-items-center flex-wrap text-center px-2">
     <p class="text-md py-1">Latest 2023 10 May</p>
-    <p class="text-md py-1">Uganda Nurse Career Resourcing</p>
-    <p class="text-md py-1 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
+    <p class="text-md py-1 opacity-50">Uganda Nurse Career Resourcing</p>
+    <p class="text-md py-1 opacity-50 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
   </div>
 `
 
@@ -152,10 +153,10 @@ blogs.innerHTML = `
         <p class="text-xl-4 b5 mt-6">Our blogs and news</p>
         
         <div class="flex flex-wrap justify-between mt-2">
-          <a href="what-is-IELTS.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
+          <a href="blogs/what-is-IELTS.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
             <div class="blog-img" style="background-image: url('img/ielts.png');"></div>
             <div class="ml-2">
-              <p><span class="b5">What is IELTS?</span><br>IELTS in full is International English Language Testing System that is designed</p>
+              <p class="text-md"><span class="b6 text-lg">What is IELTS?</span><br>IELTS in full is International English Language Testing System that is designed</p>
             </div>
           </div></a>
 

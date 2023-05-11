@@ -1,14 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap');
 
+
+@font-face {
+   font-family: unity;
+   src: url('../fonts/unify-sans-font/UnifySans-Regular.ttf');
+}
+ 
+
 *{
   padding: 0;
   margin: 0;
   font-size: 18px;
   z-index: 1;
   color: #424242;
-  font-weight: 500;
+  /*font-weight: 500;*/
   line-height: 1.5;
-  font-family: 'Wix Madefor Display', sans-serif !important;
+  /*font-family: 'Wix Madefor Display', sans-serif !important;*/
+  font-family: unity, sans-serif;
 }
 
 html{
@@ -52,15 +60,20 @@ nav *{
   font-size: 22px !important;
 }
 
-.im, .im * {
-  /*font-family: 'Crimson Text', serif !important;*/
-  font-family: 'Uber Move Text', sans-serif !important;
-}
+.im, .im * { color: #0098fe !important; }
+.link, .link * { color: #1665cf !important; }
 
-.c{
-  color: #000;
-}
+.facebook { background-color: #4267B2; }
+.twitter { background-color: #55ACEE; }
+.gmail { background-color: #7D7D7D; }
+.whatsapp { background-color: #25D366; }
 
+.decoration {
+  background-color: #E65005;
+  color: white !important;
+  font-size: 20px !important;
+  border-radius: 50px;
+}
 
 .b5, .b5 *{ font-weight: 500 !important; }
 .b6, .b6 *{ font-weight: 600 !important; }
@@ -278,4 +291,8 @@ nav, #nav{
 
 .blog *{
   color: #555555 !important;
+}
+
+.blog a:hover{
+  text-decoration: none !important;
 }
