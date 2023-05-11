@@ -56,11 +56,11 @@ function copied(txt){
 
 
 social.innerHTML = `
-    <p onclick='copied("+447960886147")' class="py-3 bg-light-green"><i class="fab text-xl-3 fa-whatsapp"></i></p>
-    <p onclick='copied("ugandanursecareerresourcing@gmail.com")' class="py-3 bg-light-red"><i class="fab text-xl-3 fa-google"></i></p></a>
-    <a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-3 bg-blue"><i class="fab text-xl-3 fa-facebook"></i></p></a>
-    <a href="https://twitter.com/CareerNurses"><p class="py-3 bg-light-blue"><i class="fab text-xl-3 fa-twitter"></i></p></a>
-    <p onclick="showSearch()" id="w-copy" class="py-3"><i class="fas text-xl-3 fa-search"></i></p>
+    <p onclick='copied("+447960886147")' class="py-3 bg-green-200"><i class="fab text-xl-3 fa-whatsapp"></i></p>
+    <p onclick='copied("ugandanursecareerresourcing@gmail.com")' class="py-3 bg-red-200"><i class="fab text-xl-3 fa-google"></i></p></a>
+    <a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-3 bg-blue-300"><i class="fab text-xl-3 fa-facebook"></i></p></a>
+    <a href="https://twitter.com/CareerNurses"><p class="py-3 bg-blue-200"><i class="fab text-xl-3 fa-twitter"></i></p></a>
+    <p onclick="showSearch()" id="w-copy" class="py-3 bg-orange-400"><i class="fas text-xl-3 fa-search"></i></p>
 `
 
 
