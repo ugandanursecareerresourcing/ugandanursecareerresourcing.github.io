@@ -6,18 +6,22 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Uganda Nursing and Career Resourcing -Home</title>
+  <title>Uganda Nursing and Career Resourcing</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="theme-color" content="#091E42" />
+
+   <link rel="icon" type="image/x-icon" href="assets/img/apple-touch-icon.png">
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" defer></script>
 
-  <!-- Template Main CSS File -->
+  <!-- ATLASSIAN FASTBOOSTRATP -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.1/dist/css/fastbootstrap.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fastbootstrap@1.1.1/dist/js/fastbootstrap.min.js" defer></script>
+
   <link rel="stylesheet" type="text/css" href="assets/css/fancy.css">
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <link rel='stylesheet' href='https://www.herokucdn.com/purple3/latest/purple3.min.css'>
 
 
 </head>
@@ -25,62 +29,87 @@
 <body>
 
   <div class="blog-search d-none" id="search">
-    <div class="mask" id="search-away"></div>
+    <div class="mask" onclick="hideSearch()"></div>
     <div class="flex justify-center">
       <div class="col-5 col-8-md col-9-sm mt-10">
-        <div class="flex">
-          <input placeholder="Search keywords" type="" class="search hk-input py-3 pl-2 round-sm bg-white" name="">
-        </div>
-        <div class="suggested">
-          <ul>
-            <a href="blogs/what-is-IELTS.html"><li class="py-3 px-3 dark-gray">What is IELTS ?</li></a>
-          </ul>
+        <div class="round-sm p-2 bg-white">
+          <div class="flex">
+            <input placeholder="Search keywords" type="" class="form-control form-control-lg" name="">
+          </div>
+          <div class="suggested py-2">
+            <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="blogs/what-is-IELTS.html">What is IELTS?</a>
+              <a class="list-group-item list-group-item-action active" href="#">More blogs awaiting</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="social">
-    <p id="w-copy" class="py-3 bg-light-green"><i class="fab text-xl-3 fa-whatsapp"></i></p>
-    <a href="#"><p class="py-3 bg-light-red"><i class="fab text-xl-3 fa-google"></i></p></a>
+    <p onclick="copies('+44 7960 8861 47')" id="w-copy" class="py-3"><i class="fab text-xl-3 fa-whatsapp"></i></p>
+    <p onclick="copies('ugandanursecareerresourcing@gmail.com')" class="py-3 bg-light-red"><i class="fab text-xl-3 fa-google"></i></p>
     <a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-3 bg-blue"><i class="fab text-xl-3 fa-facebook"></i></p></a>
     <a href="https://twitter.com/CareerNurses"><p class="py-3 bg-light-blue"><i class="fab text-xl-3 fa-twitter"></i></p></a>
+    <p onclick="showSearch()" id="w-copy" class="py-3"><i class="fas text-xl-3 fa-search"></i></p>
   </div>
 
-  <nav class="flex bg-gradient-secondary flex-wrap-md py-4 align-items-center sticky-top justify-around px-2-sm">
-    <div class="flex flex-wrap-md align-items-center justify-end w-100-md px-2-md">
-      <div class="w-100-md flex align-items-center justify-between">
-        <p class="text-xl b9"><a href="#" class="b8 title text-xl-2 im">UgNCR</a></p>
-        <p class="d-none d-block-md" id="bars"><i class="fas fa-bars"></i></p>
+<nav class="navbar sticky-top navbar-expand-lg py-4 py-2-sm border-bottom shadow-none">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <div class="flex align-items-center">
+        <!-- <img src="/images/bootstrap-logo.svg" width="36" alt="Logo" /> -->
+        <span class="b8 title text-xl-2">UgNCR</span>
       </div>
-      <div class="flex navy d-none-md flex-wrap-md w-100-sm align-items-center justify-start ml-4 ml-0-md">
-        <p class="px-3 px-1-md py-3-md w-100-md"><a href="#more" class="flex align-items-center">Know More <span class="down"></span></a></p>
-        <p class="px-3 px-1-md py-3-md w-100-md"><a href="#about" class="flex align-items-center">About Us <span class="down"></span></a></p>
-        <p class="px-3 px-1-md py-3-md w-100-md"><a href="#services" class="flex align-items-center">Our Show Case <span class="down"></span></a></p>
-        <p class="px-3 px-1-md py-3-md w-100-md"><a href="#contact" class="flex align-items-center">Contact Us <span class="down"></span></a></p>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-0">
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="#more">Overview</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link active" aria-current="page" href="#">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" aria-current="page" href="#services">Gallery</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://twitter.com/CareerNurses">Twitter page</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d">Facebook page</a></li>
+            <li><p onclick="copies('+44 7960 8861 47')" class="dropdown-item" href="#">Whatsapp number</p></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><span onclick="copies('ugandanursecareerresourcing@gmail.com')" class="dropdown-item" href="#">Gmail account</span></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center flex-column flex-lg-row">
+        <input onclick="showSearch()" class="form-control" aria-label="readonly input example" readonly type="text" placeholder="Search blog" />
       </div>
     </div>
-
-    <div class="py-2-md px-3-md navy d-none-md w-100-md">
-      <svg role="img" aria-labelledby="exampleicon" id="search-icon" class="w2 h2 fill-white">
-        <title id="exampleicon">informational icon description</title>
-        <use xlink:href="#search-28" />
-      </svg>
-    </div>
-
-  </nav>
+  </div>
+</nav>
 
   <div class="copied py-4 d-none" id="notify"></div>
 
+  <div class="land flex justify-center flex-wrap" style="background-image: url('assets/img/nurse.jpg');">
+    <div class="msk"></div>
+    <div class="col-7 col-8-md col-10-sm px-2-sm py-7">
+      <p class="text-xl-10 text-xl-5-md b7">Uganda Nurse Career Resourcing</p>
+      <p class="">Nurses there for others</p>
+
+    </div>
+  </div>
+
   <div class="flex justify-center">
     <div class="col-6 col-8-md col-10-sm px-2-sm">
-      <div class="landing">
-        <p class="text-xl-5 py-5 py-2 fw5 col-9 ln-2">What is Uganda Nurse Career Resourcing and what do they do ?</p>
-        <img src="assets/img/nurses.jpg" class="img">
+      <div class="landing d-none">
+
+        <p class="text-xl-5 py-5 py-2 col-9 ln-2">What is Uganda Nurse Career Resourcing and what do they do ?</p>
+        <img src="assets/img/nurses.jpg" alt="Help nurses find opportinuties in countries abroad." class="img">
       </div>
 
-      <div class="mt-5" id="more">
-        <p class="text-xl-3 fw5 py-2 ln-2 im">Uganda Nurse Career Resourcing is a Nursing  Consultancy firm engaged in online nursing training courses and advices on recruiting countries and organisations of nurses allover the world.</p>
+      <div class="mt-6" id="more">
+        <p class="text-xl py-2 ln-2">Uganda Nurse Career Resourcing is a Nursing  Consultancy firm engaged in online nursing training courses and advices on recruiting countries and organisations of nurses allover the world.</p>
 
         <p class="mt-4 ln-2">We endeavour to be always on the side of nurses through offering holistic support for them to achieve their dreams of working abroad leveraging on several years of combined experience doing exactly this. Find advise nurses on how to find nursing opportinities in developed nations like United States of America, The United Kingdom, Australia, Canada and some more others.</p>
 
@@ -88,15 +117,15 @@
         <p class="mt-3"></p>
 
         <div class="mt-5">
-          <button class="hk-button--secondary" onclick="notYet()">Check Out our Blogs</button>
+          <button class="btn btn-default" onclick="notYet()">Check Out our Blogs</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="flex py-15 mt-10 justify-center blue" id="about">
+  <div class="flex py-15 py-5-sm mt-10 justify-center blue" id="about">
     <div class="col-6 col-8-md col-10-sm px-2-sm">
-      <p class="text-xl-7 b6 purple">About Uganda Nurse Career Resourcing</p>
+      <p class="text-xl-7 b5">About Uganda Nurse Career Resourcing</p>
       <p class="mt-4 bb-1 about py-3 px-2">It's based in Uganda and managed by a team of overseas Nurses whose mission is to offer support to Nurses relocating to overseas countries.</p>
       <p class="mt-2 bb-1 about py-3 px-2">Advises nurses on how to find local and international job opportunities and also  accessing some for chanced lucky nurses if they come in times where the job is available on the table.</p>
       <p class="mt-2 bb-1 about py-3 px-2">Provides online classes or lessons for nurses on what to do when they have reached abroad how to stay so that life can be smooth for them.</p>
@@ -105,24 +134,24 @@
     </div>
   </div>
 
-  <div class="flex pt-12 pb-15 justify-center" id="services">
+  <div class="flex pt-12 pb-15 py-5-sm justify-center" id="services">
     <div class="col-8 col-9-md col-10-sm">
-      <p class="text-xl-7 b6 purple">Our team showcase</p>
-      <div class="flex mt-3 grid-container grid-4 grid-3-md grid-1-sm justify-around">
-        <div class="col mt-3">
+      <p class="text-xl-5">Our team showcase</p>
+      <div class="flex mt-3 flex-wrap">
+        <div class="col-2 col-3-lg col-5-md col-10-sm mt-3">
           <div class="happy mt-3 mx-3 flex justify-center align-items-center" style="background-image: url('assets/img/1.jpg');">
           </div>
         </div>
-        <div class="col mt-3">
+        <div class="col-2 col-3-lg col-5-md col-10-sm mt-3">
           <div class="happy mt-3 mx-3 flex justify-center align-items-center" style="background-image: url('assets/img/2.jpg');">
           </div>
         </div>
-        <div class="col mt-3">
+        <div class="col-2 col-3-lg col-5-md col-10-sm mt-3">
           <div class="happy mt-3 mx-3 flex justify-center align-items-center" style="background-image: url('assets/img/3.jpg');">
           </div>
         </div>
 
-        <div class="col mt-3">
+        <div class="col-2 col-3-lg col-5-md col-10-sm mt-3">
           <div class="happy mt-3 mx-3 flex justify-center align-items-center" style="background-image: url('assets/img/5.jpg');">
           </div>
         </div>
@@ -134,19 +163,15 @@
   <div class="flex mt-10 justify-center blue" id="contact">
     <div class="col-8 col-9-md col-10-sm flex flex-wrap-md justify-around">
       <div class="col-5 col-10-md px-2-sm">
-        <p class="text-xl-4 bold purple mt-7">Contact Us</p>
-        <p class="mt py-3">We are base in Uganda but you know the internet has no limit to location so we use social media platforms to be reached by everyone from different corners of the earth.</p>
+        <p class="text-xl-4 b5 mt-6">Contact Us</p>
+        <p class="">We are base in Uganda but you know the internet has no limit to location so we use social media platforms to be reached by everyone from different corners of the earth.</p>
 
         <div class="mt-2">
-
-          <div class="relative dib"><button class="hk-button--secondary">Social Media handles</button>
-            <ul class="hk-dropdown--left z-5">
-              <li><a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d" class="hk-dropdown-item" tabindex="0">Facebook</a></li>
-              <li><a href="https://twitter.com/CareerNurses" class="hk-dropdown-item" tabindex="0">Twitter</a></li>
-              <li><a href="https://twitter.com/CareerNurses" class="hk-dropdown-item" tabindex="0">Gmail</a></li>
-              <li class="hk-dropdown-divider"></li>
-              <li id="copy"><p class="hk-dropdown-item--danger" tabindex="0">+447960886147</p></li>
-            </ul>
+          <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><i class="fab fa-facebook-f fa-lg me-3"></i> Facebook</a>
+            <a class="list-group-item list-group-item-action active" href="https://twitter.com/CareerNurses"><i class="fab fa-twitter fa-lg me-3"></i> Twitter</a>
+            <p onclick="copies('ugandanursecareerresourcing@gmail.com')" class="list-group-item list-group-item-action" href="#"><i class="fab fa-google fa-lg me-3"></i> Gmail</p>
+            <p onclick="copies('+44 7960 8861 47')" class="list-group-item list-group-item-action" href="#"><i class="fab fa-whatsapp fa-lg me-3"></i> Whatsapp</p>
           </div>
 
         </div>
@@ -164,7 +189,7 @@
         <div class="profile w-100 round-sm" style="background-image: url('assets/img/profile.jpg');"></div>
       </div>
       <div class="col-5 col-5-md col-10-sm mt-5-sm">
-        <p class="text-xl-4 purple bold">CEO Uganda Nurse Career Resourcing</p>
+        <p class="text-xl-4 b5">CEO Uganda Nurse Career Resourcing</p>
         <p class="mt-4 ln-2">A registered nurse in Uganda licensed by the Uganda Nurses and Midwifery council since Nover of 2021.</p>
 
         <div class="mt-4">
@@ -180,47 +205,36 @@
           <p class="pr-2 b6 flex align-items-center"><span class="caret"></span> Degree: &nbsp; <span class="b4">Diploma in nursing (2021)</span></p>
         </div>
 
-        <p class="mt-6 ln-2">CEO Francis Mubiru is currently based in UK London but handles and is aware of all his operations in Uganda. He also manages to attend to those in different countries via the media so click to any of our social media platforms to contact us. Thank you.</p>
+        <p class="mt-5 ln-2">CEO Francis Mubiru is currently based in UK London but handles and is aware of all his operations in Uganda. He also manages to attend to those in different countries via the media so click to any of our social media platforms to contact us. Thank you.</p>
 
       </div>
     </div>
   </div>
 
-  <div class="flex mt-10 justify-center smoky py-10" id="contact">
+  <div class="flex mt-10 justify-center smoky pb-10" id="contact">
     <div class="col-7 col-9-md col-10-sm ">
       <div class="px-2-sm">
-        <p class="text-xl-4 bold purple mt-7">Our blogs and news</p>
+        <p class="text-xl-4 b5 mt-6">Our blogs and news</p>
         
-        <div class="flex flex-wrap justify-between mt-3">
-          <a href="blogs/what-is-IELTS.html" class="col-4 col-5-lg col-10-sm"><div class="mt-4 flex">
+        <div class="flex flex-wrap justify-between mt-2">
+          <a href="blogs/what-is-IELTS.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
             <div class="blog-img" style="background-image: url('blogs/img/ielts.png');"></div>
             <div class="ml-2">
-              <p class="fw5">What is IELTS?</p>
-              <p class="mt-1 ln-2">IELTS in full is International English Language Testing System that is designed</p>
-            </div>
-          </div></a>
-
-          <a href="blogs/what-is-IELTS.html" class="col-4 d-none col-5-lg col-10-sm"><div class="mt-4 ml-7 ml-4-lg ml-2-md ml-0-sm flex">
-            <div class="blog-img" style="background-image: url('blogs/img/ielts.png');"></div>
-            <div class="ml-2">
-              <p class="fw5">What is IELTS?</p>
-              <p class="mt-1 ln-2">IELTS in full is International English Language Testing System that is designed</p>
+              <p><span class="b5">What is IELTS?</span><br>IELTS in full is International English Language Testing System that is designed</p>
             </div>
           </div></a>
 
         </div>
-
         
       </div>
 
-      
     </div>
   </div>
 
   <footer class="flex justify-center py-5">
     <div class="col-8 col-10-md flex-wrap-md px-2-md flex justify-around">
       <div class="col-3 col-10-sm col-5-md py-5">
-        <p class="text-xl-7 text-black ln-2">Uganda Nurse Career Resourcing</p>
+        <p class="text-xl-7 ln-2">Uganda Nurse Career Resourcing</p>
         <p class="mt-2 pl-2 text-md">Nurses here for others.</p>
       </div>
       <div class="col-2 col-5-md">
@@ -246,10 +260,10 @@
     </div>
   </footer>
 
-  <div class="copyright py-2 flex justify-around align-items-center flex-wrap text-center px-2">
-    <p class="text-md py-2">Latest 2023 10 May</p>
-    <p class="text-md py-2">Uganda Nurse Career Resourcing</p>
-    <p class="text-md py-2 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
+  <div class="copyright pt-3 pb-1 flex justify-around align-items-center flex-wrap text-center px-2">
+    <p class="text-md py-1">Latest 2023 10 May</p>
+    <p class="text-md py-1">Uganda Nurse Career Resourcing</p>
+    <p class="text-md py-1 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
   </div>
 
 

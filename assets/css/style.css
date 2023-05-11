@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
-                
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *{
   padding: 0;
   margin: 0;
-  color: #475366;
-  font-size: 15.5px;
+  font-size: 16px;
   z-index: 1;
-  font-family: 'Work Sans', sans-serif;
+  color: #404040;
+  line-height: 1.5;
+  /*font-family: 'Public Sans', sans-serif !important;*/
+  font-family: 'Poppins', sans-serif !important;
 }
 
 html{
@@ -15,16 +19,15 @@ html{
 
 .social{
   position: fixed;
-  top: 35%;
+  bottom: 10%;
   left: 0;
-  color: white;
   z-index: 5;
   border-radius: 5px;
   overflow: hidden;
 }
 
 .social *{
-  color: white !important;
+  color: #172b4d !important;
 }
 
 .social p{
@@ -35,15 +38,18 @@ html{
 
 nav{
   z-index: 5;
+  background-color: #F5F5F5;
 }
 
 nav *{
-  color: white;
+  font-weight: 400;
   font-size: 14px;
+  color: #404040 !important;
 }
 
 .title{
-  font-weight: 600;
+  color: #444444;
+  font-weight: 900;
 }
 
 .im, .im * {
@@ -56,6 +62,7 @@ nav *{
 }
 
 
+.b5, .b5 *{ font-weight: 500 !important; }
 .b6, .b6 *{ font-weight: 600 !important; }
 .b7, .b7 *{ font-weight: 700 !important; }
 .b8, .b8 *{ font-weight: 800 !important; }
@@ -72,11 +79,34 @@ nav *{
 .blue *{
   color: #232323;
   line-height: 1.5;
-  border-color: #EEF1F6;
+  border-color: #EBECF0;
 }
 
 .about:hover{
   opacity: 70%;
+}
+
+.land{
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.land *{
+  z-index: 3;
+  color: white;
+}
+
+.land .msk{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2;
 }
 
 .happy{
@@ -132,15 +162,14 @@ nav *{
   color: red;
 }
 
-.smoky { background-color: #F0F4FC; }
+.smoky { background-color: #EBECF0; }
 
 footer{
-  background-color: #F0F0F0;
-
+  background-color: #0F4791;
 }
 
 footer *{
-  color: #575757;
+  color: white !important;
 }
 
 .line{
@@ -185,7 +214,11 @@ footer *{
   top: 0;
   right: 0;
   left: 0;
-  z-index: 11;
+  z-index: 30;
+}
+
+nav, #nav{
+  z-index: 20 !important;
 }
 
 .blog-search .col-5{
@@ -198,8 +231,8 @@ footer *{
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0,0,0,.7);
   z-index: 12;
+  background-color: rgb(66, 82, 110,.6);
 }
 
 .search{
@@ -243,4 +276,8 @@ footer *{
   background-size: cover;
   background-position: center;
   border-radius: 7px;
+}
+
+.blog *{
+  color: #555555 !important;
 }

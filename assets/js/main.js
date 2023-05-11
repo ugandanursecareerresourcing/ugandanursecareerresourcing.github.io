@@ -12,53 +12,27 @@ function notification(note){
 }
 
 
-function copyNumber(){
+function copies(txt){
   navigator.clipboard.writeText('+447960886147');
-  alert('Copied number to clipboard');
+  alert('Copied data to clipboard');
 
+  notification(`<p class="text-center ln-2">copied information <span class="b6">${txt}</span> to clipboard.</p>`)
 }
 
-cops.onclick = () => {
-  copyNumber();
-  notification(`<p class="text-center ln-2">copied whatsapp number <span class="b6">+44 7960 8861 47</span> to clipboard.</p>`)
-};
-
-wcopy.onclick = () => {
-  copyNumber();
-  notification(`<p class="text-center ln-2">copied whatsapp number <span class="b6">+44 7960 8861 47</span> to clipboard.</p>`)
-};
-
-let navy = document.getElementsByClassName('navy');
-    bars = document.getElementById('bars');
-
-bars.onclick = ()=>{
-  for(let i = 0; i < navy.length; i++){
-    if(navy[i].classList.contains('d-none-md'))
-      navy[i].classList.remove('d-none-md');
-    else
-      navy[i].classList.add('d-none-md');
-  }
-}
 
 
 let search =  document.getElementById('search');
-    searchAway =  document.getElementById('search-away');
-    searchBtn =  document.getElementById('search-icon');
 
 function blogSearch(){
 
 }
 
-function awaySh(){
-  search.classList.add('d-none');
-}
-
-searchAway.onclick = () => {
-  awaySh();
-}
-
-searchBtn.onclick = () => {
+function showSearch(){
   search.classList.remove('d-none');
+}
+
+function hideSearch(){
+  search.classList.add('d-none');
 }
 
 function notYet(){
