@@ -2,7 +2,7 @@ let nav = document.getElementById('nav');
 let social = document.getElementById('social');
 
 nav.innerHTML = `
-  <nav class="navbar sticky-top navbar-expand-lg py-4 py-2-sm flex justify-center border-bottom shadow-none">
+  <nav class="navbar sticky-top navbar-expand-lg py-4 py-1-sm flex justify-center border-bottom shadow-none">
   <div class="col-6 col-8-lg col-10-md flex flex-wrap justify-between px-2-sm">
     <a class="navbar-brand" href="../index.html">
       <div class="flex align-items-center">
@@ -26,7 +26,7 @@ nav.innerHTML = `
           </ul>
         </li>
       </ul>
-      <div class="d-flex align-items-center flex-column flex-lg-row">
+      <div class="d-flex align-items-center flex-lg-row">
         <input onclick="showSearch()" class="form-control" aria-label="readonly input example" readonly type="text" placeholder="Search blog" />
         <button onclick="showSearch()" class="btn decoration flex align-items-center justify-between py-2 ml-2 px-3">search <i class="fas ml-2 fa-search"></i></button>
       </div>
@@ -89,8 +89,7 @@ foot.innerHTML = `
         <div class="line pl-3 py-5">
           <p class="c text-xl">Popular Links</p>
           <p class="mt-2 text-md"><a href="what-is-IELTS.html">What is IELTS ?</a></p>
-          <p class="mt-2 text-md o-60">Tackling nursing interviews</p>
-          <p class="mt-2 text-md o-60">Choosing country of choose.</p>
+          <p class="mt-2 text-md"><a href="OSCE.html">What is OSCE ?</a></p>
         </div>
       </div>
     </div>
@@ -113,7 +112,7 @@ sc.innerHTML = `
       <div class="col-5 col-8-md col-9-sm mt-10">
         <div class="round-sm p-2 bg-white">
           <div class="flex">
-            <input placeholder="Search keywords" type="" class="form-control form-control-lg" name="">
+            <input placeholder="Search keywords" type="" class="form-control" name="">
           </div>
           <div class="suggested py-2">
             <div class="list-group">
