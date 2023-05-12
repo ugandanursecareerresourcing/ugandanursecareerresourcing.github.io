@@ -119,6 +119,7 @@ sc.innerHTML = `
           <div class="suggested py-2">
             <div class="list-group">
               <a class="list-group-item list-group-item-action" href="what-is-IELTS.html">What is IELTS?</a>
+              <a class="list-group-item list-group-item-action" href="OSCE.html">OSCE examination</a>
               <a class="list-group-item list-group-item-action active" href="#">More blogs awaiting</a>
             </div>
           </div>
@@ -153,10 +154,17 @@ blogs.innerHTML = `
         <p class="text-xl-4 b5 mt-6">Our blogs and news</p>
         
         <div class="flex flex-wrap justify-between mt-2">
-          <a href="blogs/what-is-IELTS.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
+          <a href="what-is-IELTS.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
             <div class="blog-img" style="background-image: url('img/ielts.png');"></div>
             <div class="ml-2">
               <p class="text-md"><span class="b6 text-lg">What is IELTS?</span><br>IELTS in full is International English Language Testing System that is designed</p>
+            </div>
+          </div></a>
+
+          <a href="OSCE.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
+            <div class="blog-img" style="background-image: url('img/osce.jpeg');"></div>
+            <div class="ml-2">
+              <p class="text-md"><span class="b6 text-lg">What is OSCE?</span><br>OSCE in full is objective structured clinical examination that accesses nurses skill...</p>
             </div>
           </div></a>
 

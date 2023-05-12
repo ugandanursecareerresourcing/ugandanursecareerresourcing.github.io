@@ -296,3 +296,11 @@ nav, #nav{
 .blog a:hover{
   text-decoration: none !important;
 }
+
+.side{
+  background-color: #F5F5F5;
+}
+
+ul{
+  padding-left: 20px;
+}
