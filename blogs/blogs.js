@@ -6,8 +6,7 @@ nav.innerHTML = `
   <div class="col-6 col-8-lg col-10-md flex flex-wrap justify-between px-2-sm">
     <a class="navbar-brand" href="../index.html">
       <div class="flex align-items-center">
-        <!-- img src="/images/bootstrap-logo.svg" width="36" alt="Logo" /-->
-        <span class="b8 title">UgNCR</span>
+        <img src="../assets/logos/svg/logo.svg" class="img" alt="Logo" />
       </div>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
