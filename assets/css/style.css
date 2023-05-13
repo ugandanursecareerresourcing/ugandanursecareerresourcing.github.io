@@ -61,7 +61,7 @@ nav *{
 }
 
 .im, .im * { color: #0098fe !important; }
-.link, .link * { color: #1665cf !important; }
+.link, .link * { color: rgb(0, 82, 204) !important; }
 
 .facebook { background-color: #4267B2; }
 .twitter { background-color: #55ACEE; }
@@ -299,8 +299,13 @@ nav, #nav{
 
 .side{
   background-color: #F5F5F5;
+  border-radius: 5px;
 }
 
 ul{
   padding-left: 20px;
+}
+
+.lighter{
+  color: #808080 !important;
 }
