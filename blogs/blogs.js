@@ -2,8 +2,8 @@ let nav = document.getElementById('nav');
 let social = document.getElementById('social');
 
 nav.innerHTML = `
-  <nav class="navbar sticky-top navbar-expand-lg py-4 py-1-sm flex justify-center border-bottom shadow-none">
-  <div class="col-6 col-8-lg col-10-md flex flex-wrap justify-between px-2-sm">
+  <nav class="navbar sticky-top navbar-expand-lg py-4 py-0-sm flex justify-center border-bottom shadow-none">
+  <div class="col-8 col-8-lg col-10-md flex flex-wrap justify-between px-2-sm">
     <a class="navbar-brand" href="../index.html">
       <div class="flex align-items-center">
         <img src="../assets/logos/svg/logo.svg" class="img" alt="Logo" />
@@ -56,11 +56,11 @@ function copied(txt){
 
 
 social.innerHTML = `
-    <a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-3 bg-blue-300"><i class="fab fa-facebook-f"></i></p></a>
+    <a class="facebook" href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-3 facebook"><i class="fab fa-facebook-f"></i></p></a>
+    <a class="twitter" href="https://twitter.com/CareerNurses"><p class="py-3 twitter"><i class="fab fa-twitter"></i></p></a>
     <p onclick='copied("ugandanursecareerresourcing@gmail.com")' class="py-3 gmail"><i class="fas fa-envelope"></i></p></a>
-    <a href="https://twitter.com/CareerNurses"><p class="py-3 twitter"><i class="fab fa-twitter"></i></p></a>
     <p onclick='copied("+447960886147")' class="py-3 whatsapp"><i class="fab fa-whatsapp"></i></p>
-    <p onclick="showSearch()" id="w-copy" class="py-3 bg-orange-400"><i class="fas fa-search"></i></p>
+    <p onclick="showSearch()" id="w-copy" class="py-3 wechat"><i class="fas fa-search"></i></p>
 `
 
 
@@ -116,9 +116,9 @@ sc.innerHTML = `
           </div>
           <div class="suggested py-2">
             <div class="list-group">
+              <a class="list-group-item list-group-item-action" href="nurses.html">Nurses work</a>
               <a class="list-group-item list-group-item-action" href="what-is-IELTS.html">What is IELTS?</a>
               <a class="list-group-item list-group-item-action" href="OSCE.html">OSCE examination</a>
-              <a class="list-group-item list-group-item-action active" href="#">More blogs awaiting</a>
             </div>
           </div>
         </div>
@@ -146,30 +146,42 @@ function hideSearch(){
 let blogs = document.getElementById('blogs');
 
 blogs.innerHTML = `
-<div class="flex mt-10 justify-center smoky pb-10" id="contact">
-    <div class="col-7 col-9-md col-10-sm ">
-      <div class="px-2-sm">
-        <p class="text-xl-4 b5 mt-6">Our blogs and news</p>
+<div class="side py-3 px-5 px-2-sm mx-3 mx-2-lg mx-1-md mx-0-sm mb-10 mb-3-md">
+  <p class="im">Checkout</p>
+  <div class="mt-3">
+    <img src="posters/osce-poster1.png" class="img round-sm">
+
+      <div class="">
+        <p class="text-xl mt-3 im b5">Our blogs and news</p>
         
-        <div class="flex flex-wrap justify-between mt-2">
-          <a href="what-is-IELTS.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
-            <div class="blog-img" style="background-image: url('img/ielts.png');"></div>
-            <div class="ml-2">
-              <p class="text-md"><span class="b6 text-lg">What is IELTS?</span><br>IELTS in full is International English Language Testing System that is designed</p>
+        <div class="">
+
+          <a href="OSCE.html" class="blog"><div class="mt-4 flex blog-card">
+            <div class="blog-img col-3" style="background-image: url('img/nurses-bg.jpg');"></div>
+            <div class="ml-2 col-7">
+              <p class="text-md">Who is a nurse, a nurse could be a man or woman who...</p>
             </div>
           </div></a>
 
-          <a href="OSCE.html" class="col-4 blog col-5-lg col-10-sm"><div class="mt-4 flex">
-            <div class="blog-img" style="background-image: url('img/osce.jpeg');"></div>
-            <div class="ml-2">
-              <p class="text-md"><span class="b6 text-lg">What is OSCE?</span><br>OSCE in full is objective structured clinical examination that accesses nurses skill...</p>
+          <a href="what-is-IELTS.html" class="blog"><div class="mt-4 flex blog-card">
+            <div class="blog-img col-3" style="background-image: url('img/ielts-bg.jpg');"></div>
+            <div class="ml-2 col-7">
+              <p class="text-md">What is IELTS, in full its International English Language...</p>
             </div>
           </div></a>
 
+          <a href="OSCE.html" class="blog"><div class="mt-4 flex blog-card">
+            <div class="blog-img col-3" style="background-image: url('img/osce-bg.jpg');"></div>
+            <div class="ml-2 col-7">
+              <p class="text-md">What is OSCE, in full its objective structured clinical...</p>
+            </div>
+          </div></a>
+
+        
         </div>
-        
       </div>
 
     </div>
   </div>
+</div>
 `

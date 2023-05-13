@@ -57312,8 +57312,8 @@ a-sm{
 
 /* MARGIN X-AXIS */
 .mx-0-sm{
-	margin-right:0;
-	margin-left: 0;
+	margin-right:0 !important;
+	margin-left: 0 !important;
 }
 
 .mx-1-sm{
@@ -57987,8 +57987,8 @@ a-sm{
 }
 
 .px-2-sm{
-	padding-right: 10px;
-	padding-left:10px;
+	padding-right: 10px !important;
+	padding-left:10px !important;
 }
 
 .px-3-sm{
