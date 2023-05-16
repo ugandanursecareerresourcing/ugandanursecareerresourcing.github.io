@@ -15,11 +15,8 @@
 *{
   padding: 0;
   margin: 0;
-  font-size: 18px;
   z-index: 1;
   color: #424242;
-  line-height: 1.5;
-  font-family: unity, sans-serif;
 }
 
 html{
@@ -66,13 +63,11 @@ nav *{
 .im, .im * {
   color: #0098fe !important;
   /*font-weight: 900 !important;*/
-  font-family: unityb, sans-serif !important;
 }
 
 .td, .td *{
   color: #404040 !important;
   /*font-weight: 900 !important;*/
-  font-family: unityb, sans-serif !important;
 
 }
 
@@ -97,7 +92,6 @@ nav *{
 .b8, .b8 *{ font-weight: 800 !important; }
 .b9, .b9 *{
   /*font-weight: 900 !important;*/
-  font-family: unityb, sans-serif !important;
 }
 
 .b4, .b4 *{ font-weight: 400 !important; }
@@ -345,7 +339,6 @@ ul{
 .logo{
   font-size: 25px !important;
   font-weight: 900 !important;
-  font-family: unityb !important;
 }
 
 
