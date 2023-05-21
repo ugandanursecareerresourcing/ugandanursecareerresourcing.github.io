@@ -17,7 +17,10 @@
   margin: 0;
   z-index: 1;
   color: #424242;
+<<<<<<< HEAD
   line-height: 1.5;
+=======
+>>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
 }
 
 html{
@@ -64,13 +67,19 @@ nav *{
 .im, .im * {
   color: #0098fe !important;
   /*font-weight: 900 !important;*/
+<<<<<<< HEAD
   /*font-family: unityb, sans-serif !important;*/
+=======
+>>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
 }
 
 .td, .td *{
   color: #404040 !important;
   /*font-weight: 900 !important;*/
+<<<<<<< HEAD
   /*font-family: unityb, sans-serif !important;*/
+=======
+>>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
 
 }
 
@@ -95,7 +104,10 @@ nav *{
 .b8, .b8 *{ font-weight: 800 !important; }
 .b9, .b9 *{
   /*font-weight: 900 !important;*/
+<<<<<<< HEAD
   /*font-family: unityb, sans-serif !important;*/
+=======
+>>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
 }
 
 .b4, .b4 *{ font-weight: 400 !important; }
@@ -343,7 +355,10 @@ ul{
 .logo{
   font-size: 25px !important;
   font-weight: 900 !important;
+<<<<<<< HEAD
   /*font-family: unityb !important;*/
+=======
+>>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
 }
 
 
