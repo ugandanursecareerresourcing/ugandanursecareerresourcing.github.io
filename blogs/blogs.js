@@ -96,9 +96,9 @@ foot.innerHTML = `
   </footer>
 
   <div class="copyright py-2 flex justify-around align-items-center flex-wrap text-center px-2">
-    <p class="text-md py-1">Latest 2023 10 May</p>
-    <p class="text-md py-1 opacity-50">Uganda Nurse Career Resourcing</p>
-    <p class="text-md py-1 opacity-50 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
+    <p class="text-md py-1">Latest 2023 22 May</p>
+    <p class="text-md py-1 opacity-70">Uganda Nurse Career Resourcing</p>
+    <p class="text-md py-1 opacity-70 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
   </div>
 `
 
