@@ -17,10 +17,8 @@
   margin: 0;
   z-index: 1;
   color: #424242;
-<<<<<<< HEAD
+  opacity: 0;
   line-height: 1.5;
-=======
->>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
 }
 
 html{
