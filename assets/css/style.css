@@ -11,6 +11,7 @@
   font-family: 'Product Sans', arial, sans-serif;
 
   border-color: #00000010;
+  color: #424242;
 }
 
 html{
@@ -24,6 +25,10 @@ html{
   z-index: 5;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.cardy *{
+  color: #5f6368;
 }
 
 .social *{
@@ -364,7 +369,7 @@ ul{
 }
 
 *{
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .social{
