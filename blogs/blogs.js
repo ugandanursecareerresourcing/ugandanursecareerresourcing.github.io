@@ -1,38 +1,41 @@
 let nav = document.getElementById('nav');
 let social = document.getElementById('social');
 
-nav.innerHTML = `
-  <nav class="navbar sticky-top navbar-expand-lg py-4 py-0-sm flex justify-center border-bottom shadow-none">
-  <div class="col-8 col-8-lg col-10-md flex flex-wrap justify-between px-2-sm">
-    <a class="navbar-brand" href="../index.html">
-      <div class="flex align-items-center">
-        <img src="../assets/logos/svg/logo.svg" class="img" alt="Logo" />
-      </div>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-0">
-        <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html#more">Overview</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contact Us</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="https://twitter.com/CareerNurses">Twitter page</a></li>
-            <li><a class="dropdown-item" href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d">Facebook page</a></li>
-            <li><span onclick='copied("+447960886147")' class="dropdown-item" href="#">Whatsapp number</span></li>
-            <li><hr class="dropdown-divider" /></li>
-            <li><span onclick='copied("ugandanursecareerresourcing@gmail.com")' class="dropdown-item" href="#">Gmail account</span></li>
+nav.innerHTML = `<div class="flex nav justify-center sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg col-7 col-8-lg col-10-md px-2-md shadow-none">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><p class="m-0 bold logo">UGNCR</p></a>
+        <button class="navbar-toggler btn btn-default " style="color: white !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-0">
+            <li class="nav-item"><a class="nav-link" href="../index.html#more">Overview</a></li>
+            <li class="nav-item dropdown">
+              <p class="nav-link m-0" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Contact <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="20px" width="20px" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                </svg>
+              </p>
+              <ul class="dropdown-menu bg-white shadow-sm">
+                <li><a href="https://twitter.com/CareerNurses"><p class="py-1 px-3"><i class="fab fa-twitter"></i> &nbsp; Twitter</p></a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100092560505803&mibextid=LQQJ4d"><p class="py-1 px-3"><i class="fab fa-facebook-f"></i> &nbsp; Facebook</p></a></li>
+                <li><a onclick='copied("+447960886147")' href="#"><p class="py-1 px-3"><i class="fab fa-whatsapp"></i> &nbsp; WhatsApp</p></a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><p onclick='copied("ugandanursecareerresourcing@gmail.com")' class="py-1 px-3 m-0"><i class="fab fa-google"></i>&nbsp; Gmail</p></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-      <div class="d-flex align-items-center flex-lg-row">
-        <input onclick="showSearch()" class="form-control" aria-label="readonly input example" readonly type="text" placeholder="Search blog" />
-        <button onclick="showSearch()" class="btn decoration flex align-items-center justify-between py-2 ml-2 px-3">search <i class="fas ml-2 fa-search"></i></button>
+          <div class="d-flex align-items-center cursor-default">
+            <p onclick="showSearch()" class="m-0 mt-2-sm flex align-items-center">Search&nbsp; 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" height="24px" width="24px" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+    </nav>
   </div>
-</nav>
 `
 
 let show = document.getElementById('notify');
@@ -95,10 +98,10 @@ foot.innerHTML = `
     </div>
   </footer>
 
-  <div class="copyright py-2 flex justify-around align-items-center flex-wrap text-center px-2">
-    <p class="text-md py-1">Latest 2023 22 May</p>
-    <p class="text-md py-1 opacity-70">Uganda Nurse Career Resourcing</p>
-    <p class="text-md py-1 opacity-70 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
+  <div class="copyright py-2 mb-7-md flex justify-around align-items-center flex-wrap text-center px-2">
+    <p class="text-md m-0 py-1">Check 2023 Sept</p>
+    <p class="text-md m-0 py-1 opacity-70">Uganda Nurse Career Resourcing</p>
+    <p class="text-md m-0 py-1 opacity-70 underlined"><a href="https://esau-lang.github.io">Designed by Variable Code</a></p>
   </div>
 `
 

@@ -1,24 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700;800;900&display=swap');
-
-
-@font-face {
-   font-family: unity;
-   src: url('../fonts/unify-sans-font/UnifySans-Regular.ttf');
-}
-
-@font-face {
-   font-family: unityb;
-   src: url('../fonts/unify-sans-font/UnifySans-Bold.ttf');
-}
- 
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('https://fonts.cdnfonts.com/css/google-sans');
 
 *{
   padding: 0;
   margin: 0;
   z-index: 1;
-  color: #424242;
-  opacity: 0;
-  line-height: 1.5;
+  color: #5f6368;
+  font-size: 17px;
+  font-family: 'Product Sans', arial, sans-serif;
+
+  border-color: #00000010;
 }
 
 html{
@@ -45,15 +37,26 @@ html{
   margin: 0;
 }
 
-nav{
+.nav{
+  background-color: white;
   z-index: 5;
-  background-color: #F5F5F5;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.09) !important;
+  border: none !important;
 }
 
-nav *{
-  font-weight: 500 !important;
-  font-size: 16px !important;
-  color: #404040 !important;
+
+.nav *{
+  color: #5f6368;
+}
+
+.nav p:hover, .nav a:hover {
+  color: #000;
+  text-decoration: none;
+  opacity: 80%;
+}
+
+.card{
+  height: max-content;
 }
 
 .title{
@@ -63,31 +66,24 @@ nav *{
 }
 
 .im, .im * {
-  color: #0098fe !important;
-  /*font-weight: 900 !important;*/
-<<<<<<< HEAD
-  /*font-family: unityb, sans-serif !important;*/
-=======
->>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
+  color: #202124e0;
+  font-weight: bold;
 }
 
 .td, .td *{
-  color: #404040 !important;
-  /*font-weight: 900 !important;*/
-<<<<<<< HEAD
-  /*font-family: unityb, sans-serif !important;*/
-=======
->>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
-
+  color: #202124e0;
+  font-weight: bold;
 }
 
-.link, .link * { color: rgb(0, 82, 204) !important; }
+.link, .link * { 
+  color: #1967d2;
+ }
 
 .facebook { background-color: #4267B2 !important; }
-.twitter { background-color: #55ACEE; }
-.gmail { background-color: #7D7D7D; }
-.whatsapp { background-color: #25D366; }
-.wechat { background-color: #0077B5; }
+.twitter { background-color: #2684FDf0; }
+.gmail { background-color: #FBBC04; }
+.whatsapp { background-color: #01AC47; }
+.wechat { background-color: #E94336; }
 
 .decoration {
   background-color: #E65005;
@@ -100,13 +96,6 @@ nav *{
 .b6, .b6 *{ font-weight: 600 !important; }
 .b7, .b7 *{ font-weight: 700 !important; }
 .b8, .b8 *{ font-weight: 800 !important; }
-.b9, .b9 *{
-  /*font-weight: 900 !important;*/
-<<<<<<< HEAD
-  /*font-family: unityb, sans-serif !important;*/
-=======
->>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
-}
 
 .b4, .b4 *{ font-weight: 400 !important; }
 
@@ -130,6 +119,13 @@ nav *{
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+}
+
+
+.attract{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .land{
@@ -209,10 +205,10 @@ nav *{
   color: red;
 }
 
-.smoky { background-color: #F5F5F5; }
+.smoky { background-color: #FBF5ED; }
 
 footer{
-  background-color: #0F4791;
+  background-color: #0265DA;
 }
 
 footer *{
@@ -351,12 +347,8 @@ ul{
 }
 
 .logo{
-  font-size: 25px !important;
-  font-weight: 900 !important;
-<<<<<<< HEAD
-  /*font-family: unityb !important;*/
-=======
->>>>>>> 497e7b6385c475b9da8e1c0ed89e28e6770f2a44
+  font-size: 20px !important;
+  color: #d56e0c;
 }
 
 
@@ -372,7 +364,7 @@ ul{
 }
 
 *{
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .social{

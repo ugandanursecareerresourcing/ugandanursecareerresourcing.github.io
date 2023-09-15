@@ -20,6 +20,14 @@ function copies(txt){
 }
 
 
+function copied(txt){
+  navigator.clipboard.writeText(txt);
+  alert('copied contact to clipboard');
+
+  notification(`<p class="text-center ln-2 m-0 py-2">copied <span class="b6">${txt}</span> to clipboard.</p>`);
+}
+
+
 
 let search =  document.getElementById('search');
 
