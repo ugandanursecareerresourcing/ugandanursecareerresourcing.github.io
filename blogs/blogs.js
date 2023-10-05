@@ -1,12 +1,12 @@
 let nav = document.getElementById('nav');
 let social = document.getElementById('social');
 
-nav.innerHTML = `<div class="flex nav justify-center sticky-top shadow-sm">
+nav.innerHTML = `<div class="flex nav justify-center sticky-top">
     <nav class="navbar navbar-expand-lg col-7 col-8-lg col-10-md px-2-md shadow-none">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html"><p class="m-0 bold logo">UGNCR</p></a>
         <button class="navbar-toggler" style="color: white !important;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon text-white"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-0">
@@ -25,7 +25,7 @@ nav.innerHTML = `<div class="flex nav justify-center sticky-top shadow-sm">
               </ul>
             </li>
           </ul>
-          <div class="d-flex pb-2-md align-items-center cursor-default">
+          <div class="d-flex pb-2-md mt-2-md align-items-center cursor-default">
             <p onclick="showSearch()" class="m-0 mt-2-sm flex align-items-center">Search&nbsp; 
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" height="24px" width="24px" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
@@ -73,16 +73,16 @@ foot.innerHTML = `
   <footer class="flex justify-center py-5">
     <div class="col-8 col-10-md flex-wrap-md px-2-md flex justify-around">
       <div class="col-3 col-10-sm col-5-md py-5">
-        <p class="text-xl-7 ln-2">Uganda Nurse Career Resourcing</p>
+        <p class="text-xl-7 ln-2 im">Uganda Nurse Career Resourcing</p>
         <p class="mt-2 pl-2 text-md">Nurses here for others.</p>
       </div>
       <div class="col-2 col-5-md">
         <div class="py-5">
-          <p class="c text-xl">Location</p>
+          <p class="c text-xl im">Location</p>
           <p class="mt-2 text-md">Mulago</p>
           <p class="text-md mt-2">City Kampala, Uganda</p>
 
-          <p class=" text-xl c mt-5">Admission office</p>
+          <p class=" text-xl c im mt-5">Admission office</p>
           <p class="mt-2 text-md">+44 7960 8861 47</p>
           <p class="text-md mt-2">Francis Mubiru</p>
           <p class="mt-2 text-md">ugandanursecareerresourcing@gmail.com</p>
@@ -90,7 +90,7 @@ foot.innerHTML = `
       </div>
       <div class="col-2 col-5-md">
         <div class="line pl-3 py-5">
-          <p class="c text-xl">Popular Links</p>
+          <p class="c text-xl im">suggested</p>
           <p class="mt-2 text-md"><a href="what-is-IELTS.html">What is IELTS ?</a></p>
           <p class="mt-2 text-md"><a href="OSCE.html">What is OSCE ?</a></p>
         </div>
