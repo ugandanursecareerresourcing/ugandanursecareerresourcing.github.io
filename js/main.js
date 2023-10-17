@@ -50,29 +50,30 @@ $(document).ready(()=>{
 				<div class="col-3-xxl col-10-sm">
 					<p class="m-0 bold mb-1 pt-4-sm">ON PAGE</p>
 					<a href="${fake}index.html"><p class="m-0 py-1">Home</p></a>
-					<a href="${fake}index.html#blogs"><p class="m-0 py-1">Blog Pages</p></a>
-					<a href="${fake}index.html#services"><p class="m-0 py-1">Find Services</p></a>
-					<a href="#ex1" rel="modal:open"><p class="m-0 py-1">Contact Us</p></a>
-					<a href="${fake}index.html"><p class="m-0 py-1">Check Out Research</p></a>
+					<a href="${fake}index.html#blogs"><p class="m-0 py-2">Blog Pages</p></a>
+					<a href="${fake}index.html#services"><p class="m-0 py-2">Find Services</p></a>
+					<a href="#ex1" rel="modal:open"><p class="m-0 py-2">Contact Us</p></a>
+					<a href="${fake}index.html"><p class="m-0 py-2">Check Out Research</p></a>
 				</div>
 				<div class="col-3-xxl col-10-sm">
 					<p class="m-0 bold mb-1 pt-4-sm">USEFUL LINKS</p>
 					<a href=""><p class="m-0 py-1">Nurses</p></a>
 					<a href=""><p class="m-0 py-1">Care Assistants</p></a>
-					<a href="${fake}blogs/ielts.html"><p class="m-0 py-1">IELTS</p></a>
-					<a href="${fake}blogs/oet.html"><p class="m-0 py-1">OET</p></a>
-					<a href="${fake}blogs/cbt.html"><p class="m-0 py-1">CBT</p></a>
+					<a href="${fake}blogs/ielts.html"><p class="m-0 py-2">IELTS</p></a>
+					<a href="${fake}blogs/oet.html"><p class="m-0 py-2">OET</p></a>
+					<a href="${fake}blogs/cbt.html"><p class="m-0 py-2">CBT</p></a>
+					<a href="${fake}blogs/osce.html"><p class="m-0 py-2">OSCE</p></a>
 				</div>
 				<div class="col-3-xxl col-10-sm">
 					<p class="m-0 bold mb-1 pt-4-sm">CONTACT US</p>
-					<p class="m-0 py-1"><i class="icon-whatsapp"></i> &nbsp;+447960886147</p>
-					<p class="m-0 py-1"><i class="icon-email"></i> &nbsp;frankieres@gmail.com</p>
+					<p class="m-0 py-2"><i class="icon-whatsapp"></i> &nbsp;+447960886147</p>
+					<p class="m-0 py-2"><i class="icon-email"></i> &nbsp;frankieres@gmail.com</p>
 
 					<p class="m-0 pb-3 pt-4 bold uppercase">Follows Us</p>
 					<div class="flex justify-start flex-wrap">
-						<a href=""><p class="m-0 px-2"><i class="text-xl-3 icon-facebook"></i></p></a>
+						<a href="https://m.facebook.com/people/Frankie-Resourcing/100092560505803/"><p class="m-0 px-2"><i class="text-xl-3 icon-facebook"></i></p></a>
 						<a href=""><p class="m-0 px-2"><i class="text-xl-3 icon-instagram"></i></p></a>
-						<a href=""><p class="m-0 px-2"><i class="text-xl-3 icon-twitter"></i></p></a>
+						<a href="https://twitter.com/careernurses?s=11"><p class="m-0 px-2"><i class="text-xl-3 icon-twitter"></i></p></a>
 						<a href=""><p class="m-0 px-2"><i class="text-xl-3 icon-youtube"></i></p></a>
 					</div>
 				</div>
